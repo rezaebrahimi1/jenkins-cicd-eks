@@ -32,7 +32,7 @@ pipeline {
             )
             }
         }
-         /* 
+         
        stage('Unit Test maven'){
                when{expression{params.action == "create"}}      
             steps{
@@ -83,7 +83,7 @@ pipeline {
                }
             }
         }
-         */
+        
          
         stage('Docker Image Build'){
               when{expression{params.action == "create"}}       
@@ -94,7 +94,7 @@ pipeline {
                }
             }
         }
-        /* 
+        
         stage('Docker Image scan'){
               when{expression{params.action == "create"}}       
             steps{
@@ -122,7 +122,7 @@ pipeline {
                }
             }
         }
-        */
+        
        /* 
         stage('Create EKS cluster: Terraform'){
               when{expression{params.action == "create"}}       
